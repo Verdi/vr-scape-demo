@@ -1,1 +1,125 @@
-Hello World!
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VR Scape Demo</title>
+    <meta name="description" content="VR Scape Demo">
+    <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
+  </head>
+  <body>
+	  <a-scene>
+		<!-- Camera & Cursor -->
+		<a-camera wasd-controls-enabled="false" cursor-visible="true" cursor-color="#333" cursor-opacity=".5" position="0 0 0"></a-camera>
+
+		<!-- Button 2 -->
+		<a-curvedimage id="button1" src="/images/picu-urriellu-button.jpg" radius="1.85" theta-length="10" height=".342" rotation="0 30 0" position="0 -.925 0" opacity="1">
+			<!-- Keep all of the buttons ON -->
+			<a-mouseenter opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button2" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button3" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button4" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button5" opacity="1"></a-mouseenter>
+			<!-- Turn sky1 ON -->
+			<a-mouseenter target="#sky1" visible="true"></a-mouseenter>
+			<!-- Make sure the other skys are OFF -->
+			<a-mouseenter target="#sky2" visible="false"></a-mouseenter>
+			<a-mouseenter target="#sky3" visible="false"></a-mouseenter>
+			<a-mouseenter target="#sky4" visible="false"></a-mouseenter>
+			<a-mouseenter target="#sky5" visible="false"></a-mouseenter>
+		</a-curvedimage>
+
+		<!-- Button 2 -->
+		<a-curvedimage id="button2" src="/images/palace-button.jpg" radius="1.85" theta-length="10" height=".342" rotation="0 17.5 0" position="0 -.925 0" opacity="1">
+			<!-- Keep all of the buttons ON -->
+			<a-mouseenter opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button1" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button3" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button4" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button5" opacity="1"></a-mouseenter>
+			<!-- Turn sky2 ON -->
+			<a-mouseenter target="#sky2" visible="true"></a-mouseenter>
+			<!-- Make sure the other skys are OFF -->
+			<a-mouseenter target="#sky1" visible="false"></a-mouseenter>
+			<a-mouseenter target="#sky3" visible="false"></a-mouseenter>
+			<a-mouseenter target="#sky4" visible="false"></a-mouseenter>
+			<a-mouseenter target="#sky5" visible="false"></a-mouseenter>
+		</a-curvedimage>
+
+		<!-- Button 3 -->
+		<a-curvedimage id="button3" src="/images/folsom-button.jpg" radius="1.85" theta-length="10" height=".342" rotation="0 5 0" position="0 -.925 0" opacity="1">
+			<!-- Keep all of the buttons ON -->
+			<a-mouseenter opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button1" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button2" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button4" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button5" opacity="1"></a-mouseenter>
+			<!-- Turn sky3 ON -->
+			<a-mouseenter target="#sky3" visible="true"></a-mouseenter>
+			<!-- Make sure the other skys are OFF -->
+			<a-mouseenter target="#sky1" visible="false"></a-mouseenter>
+			<a-mouseenter target="#sky2" visible="false"></a-mouseenter>
+			<a-mouseenter target="#sky4" visible="false"></a-mouseenter>
+			<a-mouseenter target="#sky5" visible="false"></a-mouseenter>
+		</a-curvedimage>
+
+		<!-- Button 4 -->
+		<a-curvedimage id="button4" src="/images/viannankoski-illalla-button.jpg" radius="1.85" theta-length="10" height=".342" rotation="0 -7.5 0" position="0 -.925 0" opacity="1">
+			<!-- Keep all of the buttons ON -->
+			<a-mouseenter opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button1" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button2" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button3" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button5" opacity="1"></a-mouseenter>
+			<!-- Turn sky4 ON -->
+			<a-mouseenter target="#sky4" visible="true"></a-mouseenter>
+			<!-- Make sure the other skys are OFF -->
+			<a-mouseenter target="#sky1" visible="false"></a-mouseenter>
+			<a-mouseenter target="#sky2" visible="false"></a-mouseenter>
+			<a-mouseenter target="#sky3" visible="false"></a-mouseenter>
+			<a-mouseenter target="#sky5" visible="false"></a-mouseenter>
+		</a-curvedimage>
+
+		<!-- Button 5 -->
+		<a-curvedimage id="button5" src="/images/alien-button.jpg" radius="1.85" theta-length="10" height=".342" rotation="0 -20 0" position="0 -.925 0" opacity="1">
+			<!-- Keep all of the buttons ON -->
+			<a-mouseenter opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button1" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button2" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button3" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button4" opacity="1"></a-mouseenter>
+			<!-- Turn sky5 ON -->
+			<a-mouseenter target="#sky5" visible="true"></a-mouseenter>
+			<!-- Make sure the other skys are OFF -->
+			<a-mouseenter target="#sky1" visible="false"></a-mouseenter>
+			<a-mouseenter target="#sky2" visible="false"></a-mouseenter>
+			<a-mouseenter target="#sky3" visible="false"></a-mouseenter>
+			<a-mouseenter target="#sky4" visible="false"></a-mouseenter>
+		</a-curvedimage>
+
+		<!-- Menu Frame -->
+		<a-curvedimage src="/images/frame.png" radius="2" theta-length="70" height=".7" position="0 -1 0" rotation="0 35 0" opacity=".1">
+			<!-- Turn the buttons ON when you enter the frame -->
+			<a-mouseenter target="#button1" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button2" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button3" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button4" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button5" opacity="1"></a-mouseenter>
+			<!-- Turn the buttons OFF when you enter the frame -->
+			<a-mouseleave target="#button1" opacity="0"></a-mouseleave>
+			<a-mouseleave target="#button2" opacity="0"></a-mouseleave>
+			<a-mouseleave target="#button3" opacity="0"></a-mouseleave>
+			<a-mouseleave target="#button4" opacity="0"></a-mouseleave>
+			<a-mouseleave target="#button5" opacity="0"></a-mouseleave>
+		</a-curvedimage>
+
+		<!-- Scapes -->
+		<a-sky id="sky1" src="/images/picu-urriellu.jpg" visible="true" rotation="0 0 0"></a-sky>
+		<a-sky id="sky2" src="/images/palace.jpg" visible="false" rotation="0 0 0"></a-sky>
+		<a-sky id="sky3" src="/images/folsom.jpg" visible="false" rotation="0 0 0"></a-sky>
+		<a-sky id="sky4" src="/images/viannankoski-illalla.jpg" visible="false" rotation="0 0 0"></a-sky>
+		<a-sky id="sky5" src="/images/alien.jpg" visible="false" rotation="0 0 0"></a-sky>
+		  
+	  </a-scene>
+  </body>
+</html>
+	  
