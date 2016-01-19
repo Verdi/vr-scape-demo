@@ -21,12 +21,16 @@
 			<a-mouseenter target="#button5" opacity="1"></a-mouseenter>
 			<!-- Turn sky1 ON -->
 			<a-mouseenter target="#sky1" visible="true"></a-mouseenter>
+			<!-- Turn title1 ON -->
+			<a-mouseenter target="#title1" visible="true"></a-mouseenter>
 			<!-- Make sure the other skys are OFF -->
 			<a-mouseenter target="#sky2" visible="false"></a-mouseenter>
 			<a-mouseenter target="#sky3" visible="false"></a-mouseenter>
 			<a-mouseenter target="#sky4" visible="false"></a-mouseenter>
 			<a-mouseenter target="#sky5" visible="false"></a-mouseenter>
 		</a-curvedimage>
+		
+		<a-curvedimage id="title1" src="images/picu-urriellu-title.png" radius="1.85" theta-length="50" height=".81" position="0 -.18 0" rotation="0 30 0" opacity="1"></a-curvedimage>
 
 		<!-- Button 2 -->
 		<a-curvedimage id="button2" src="images/palace-button.jpg" radius="1.85" theta-length="10" height=".342" rotation="0 17.5 0" position="0 -.925 0" opacity="1">
@@ -110,9 +114,8 @@
 			<a-mouseleave target="#button3" opacity="0"></a-mouseleave>
 			<a-mouseleave target="#button4" opacity="0"></a-mouseleave>
 			<a-mouseleave target="#button5" opacity="0"></a-mouseleave>
-		</a-curvedimage>
-		
-		<a-curvedimage src="images/picu-urriellu-title.png" radius="1.85" theta-length="50" height=".81" position="0 -.18 0" rotation="0 30 0" opacity="1">
+			<!-- Turn the titles OFF when you enter the frame -->
+			<a-mouseleave target="#title1" opacity="0"></a-mouseleave>
 		</a-curvedimage>
 
 		<!-- Scapes -->
