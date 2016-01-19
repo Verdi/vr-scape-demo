@@ -13,12 +13,6 @@
 
 		<!-- Button 1 -->
 		<a-curvedimage id="button1" src="images/picu-urriellu-button.jpg" radius="1.85" theta-length="10" height=".342" rotation="0 30 0" position="0 -1.4 0" opacity="1">
-			<!-- Keep all of the buttons ON -->
-			<a-mouseenter opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button2" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button3" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button4" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button5" opacity="1"></a-mouseenter>
 			<!-- Turn sky1 ON -->
 			<a-mouseenter target="#sky1" visible="true"></a-mouseenter>
 			<!-- Make sure the other skys are OFF -->
@@ -30,12 +24,6 @@
 
 		<!-- Button 2 -->
 		<a-curvedimage id="button2" src="images/palace-button.jpg" radius="1.85" theta-length="10" height=".342" rotation="0 17.5 0" position="0 -1.4 0" opacity="1">
-			<!-- Keep all of the buttons ON -->
-			<a-mouseenter opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button1" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button3" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button4" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button5" opacity="1"></a-mouseenter>
 			<!-- Turn sky2 ON -->
 			<a-mouseenter target="#sky2" visible="true"></a-mouseenter>
 			<!-- Make sure the other skys are OFF -->
@@ -47,12 +35,6 @@
 
 		<!-- Button 3 -->
 		<a-curvedimage id="button3" src="images/folsom-button.jpg" radius="1.85" theta-length="10" height=".342" rotation="0 5 0" position="0 -1.4 0" opacity="1">
-			<!-- Keep all of the buttons ON -->
-			<a-mouseenter opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button1" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button2" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button4" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button5" opacity="1"></a-mouseenter>
 			<!-- Turn sky3 ON -->
 			<a-mouseenter target="#sky3" visible="true"></a-mouseenter>
 			<!-- Make sure the other skys are OFF -->
@@ -64,12 +46,6 @@
 
 		<!-- Button 4 -->
 		<a-curvedimage id="button4" src="images/viannankoski-illalla-button.jpg" radius="1.85" theta-length="10" height=".342" rotation="0 -7.5 0" position="0 -1.4 0" opacity="1">
-			<!-- Keep all of the buttons ON -->
-			<a-mouseenter opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button1" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button2" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button3" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button5" opacity="1"></a-mouseenter>
 			<!-- Turn sky4 ON -->
 			<a-mouseenter target="#sky4" visible="true"></a-mouseenter>
 			<!-- Make sure the other skys are OFF -->
@@ -81,12 +57,6 @@
 
 		<!-- Button 5 -->
 		<a-curvedimage id="button5" src="images/new-world-button.jpg" radius="1.85" theta-length="10" height=".342" rotation="0 -20 0" position="0 -1.4 0" opacity="1">
-			<!-- Keep all of the buttons ON -->
-			<a-mouseenter opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button1" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button2" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button3" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button4" opacity="1"></a-mouseenter>
 			<!-- Turn sky5 ON -->
 			<a-mouseenter target="#sky5" visible="true"></a-mouseenter>
 			<!-- Make sure the other skys are OFF -->
@@ -97,34 +67,12 @@
 		</a-curvedimage>
 
 		<!-- Menu Frame -->
-		<a-curvedimage src="images/frame.png" radius="2" theta-length="70" height="1.22" position="0 -1.4 0" rotation="0 35 0" opacity=".1">
-			<!-- Turn the buttons ON when you enter the frame -->
-			<a-mouseenter target="#button1" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button2" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button3" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button4" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button5" opacity="1"></a-mouseenter>
-			<!-- Turn the buttons OFF when you enter the frame -->
-			<!--<a-mouseleave target="#button1" opacity="0"></a-mouseleave>-->
-			<!--<a-mouseleave target="#button2" opacity="0"></a-mouseleave>-->
-			<!--<a-mouseleave target="#button3" opacity="0"></a-mouseleave>-->
-			<!--<a-mouseleave target="#button4" opacity="0"></a-mouseleave>-->
-			<!--<a-mouseleave target="#button5" opacity="0"></a-mouseleave>-->
-		</a-curvedimage>
-
-		
+		<a-curvedimage src="images/frame.png" radius="2" theta-length="70" height="1.22" position="0 -1.4 0" rotation="0 35 0" opacity=".1"></a-curvedimage>
 
 		<!-- Scapes -->
 		<!-- Desde la cima del Picu Urriellu by Andres Miguez - https://www.flickr.com/photos/sitoo/7999159134/ CC-BY-NC-ND https://creativecommons.org/licenses/by-nc-nd/2.0/ -->
 		<a-sky id="sky1" src="images/picu-urriellu.jpg" visible="true" rotation="0 0 0">
-			<a-curvedimage id="title1" src="images/picu-urriellu-title.png" radius="1.85" theta-length="50" height=".285" position="0 -1 0" rotation="0 30 0" opacity=".5">
-				<!-- Turn the buttons ON when you enter the frame -->
-				<a-mouseenter target="#button1" opacity="1"></a-mouseenter>
-				<a-mouseenter target="#button2" opacity="1"></a-mouseenter>
-				<a-mouseenter target="#button3" opacity="1"></a-mouseenter>
-				<a-mouseenter target="#button4" opacity="1"></a-mouseenter>
-				<a-mouseenter target="#button5" opacity="1"></a-mouseenter>
-			</a-curvedimage>
+			<a-curvedimage id="title1" src="images/picu-urriellu-title.png" radius="1.85" theta-length="50" height=".285" position="0 -1 0" rotation="0 30 0" opacity=".7"></a-curvedimage>
 		</a-sky>
 			
 		<!-- Palace Hotel in Ukiah by Bob Dass - https://www.flickr.com/photos/54144402@N03/9628028996/ CC-BY https://creativecommons.org/licenses/by/2.0/ -->
