@@ -11,7 +11,7 @@
 		<!-- Camera & Cursor -->
 		<a-camera wasd-controls-enabled="false" cursor-visible="true" cursor-color="#333" cursor-opacity=".5" position="0 0 0"></a-camera>
 
-		<!-- Button 2 -->
+		<!-- Button 1 -->
 		<a-curvedimage id="button1" src="images/picu-urriellu-button.jpg" radius="1.85" theta-length="10" height=".342" rotation="0 30 0" position="0 -.925 0" opacity="1">
 			<!-- Keep all of the buttons ON -->
 			<a-mouseenter opacity="1"></a-mouseenter>
@@ -29,8 +29,6 @@
 			<a-mouseenter target="#sky4" visible="false"></a-mouseenter>
 			<a-mouseenter target="#sky5" visible="false"></a-mouseenter>
 		</a-curvedimage>
-		
-		<a-curvedimage id="title1" src="images/picu-urriellu-title.png" radius="1.85" theta-length="50" height=".81" position="0 -.18 0" rotation="0 30 0" opacity="1"></a-curvedimage>
 
 		<!-- Button 2 -->
 		<a-curvedimage id="button2" src="images/palace-button.jpg" radius="1.85" theta-length="10" height=".342" rotation="0 17.5 0" position="0 -.925 0" opacity="1">
@@ -114,9 +112,11 @@
 			<a-mouseleave target="#button3" opacity="0"></a-mouseleave>
 			<a-mouseleave target="#button4" opacity="0"></a-mouseleave>
 			<a-mouseleave target="#button5" opacity="0"></a-mouseleave>
-			<!-- Turn the titles OFF when you enter the frame -->
+			<!-- Turn the titles OFF when you leave the frame -->
 			<a-mouseleave target="#title1" opacity="0"></a-mouseleave>
 		</a-curvedimage>
+
+		<a-curvedimage id="title1" src="images/picu-urriellu-title.png" radius="1.85" theta-length="50" height=".81" position="0 -.18 0" rotation="0 30 0" opacity="1"></a-curvedimage>
 
 		<!-- Scapes -->
 		<!-- Desde la cima del Picu Urriellu by Andres Miguez - https://www.flickr.com/photos/sitoo/7999159134/ CC-BY-NC-ND https://creativecommons.org/licenses/by-nc-nd/2.0/ -->
