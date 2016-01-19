@@ -11,26 +11,8 @@
 		<!-- Camera & Cursor -->
 		<a-camera wasd-controls-enabled="false" cursor-visible="true" cursor-color="#333" cursor-opacity=".5" position="0 0 0"></a-camera>
 
-		<!-- Menu Frame -->
-		<a-curvedimage src="images/frame.png" radius="2" theta-length="70" height="1.22" position="0 -1 0" rotation="0 35 0" opacity=".1">
-			<!-- Turn the buttons ON when you enter the frame -->
-			<a-mouseenter target="#button1" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button2" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button3" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button4" opacity="1"></a-mouseenter>
-			<a-mouseenter target="#button5" opacity="1"></a-mouseenter>
-			<!-- Turn the buttons OFF when you enter the frame -->
-			<a-mouseleave target="#button1" opacity="0"></a-mouseleave>
-			<a-mouseleave target="#button2" opacity="0"></a-mouseleave>
-			<a-mouseleave target="#button3" opacity="0"></a-mouseleave>
-			<a-mouseleave target="#button4" opacity="0"></a-mouseleave>
-			<a-mouseleave target="#button5" opacity="0"></a-mouseleave>
-		</a-curvedimage>		
-		
-		<!-- Button 1 -->
-		<template is="a-template" element="button1">
-		<a-curvedimage src="images/picu-urriellu-button.jpg" radius="1.85" theta-length="10" height=".342" rotation="0 30 0" position="0 -.925 0" opacity="1"></a-curvedimage>	
-		<a-curvedimage src="images/picu-urriellu-title.png" radius="1.85" theta-length="50" height=".81" position="0 .75 0" rotation="0 30 0" opacity="1"></a-curvedimage>
+		<!-- Button 2 -->
+		<a-curvedimage id="button1" src="images/picu-urriellu-button.jpg" radius="1.85" theta-length="10" height=".342" rotation="0 30 0" position="0 -.925 0" opacity="1">
 			<!-- Keep all of the buttons ON -->
 			<a-mouseenter opacity="1"></a-mouseenter>
 			<a-mouseenter target="#button2" opacity="1"></a-mouseenter>
@@ -44,8 +26,7 @@
 			<a-mouseenter target="#sky3" visible="false"></a-mouseenter>
 			<a-mouseenter target="#sky4" visible="false"></a-mouseenter>
 			<a-mouseenter target="#sky5" visible="false"></a-mouseenter>
-		</template>
-		<button1></button1>
+		</a-curvedimage>
 
 		<!-- Button 2 -->
 		<a-curvedimage id="button2" src="images/palace-button.jpg" radius="1.85" theta-length="10" height=".342" rotation="0 17.5 0" position="0 -.925 0" opacity="1">
@@ -113,6 +94,25 @@
 			<a-mouseenter target="#sky2" visible="false"></a-mouseenter>
 			<a-mouseenter target="#sky3" visible="false"></a-mouseenter>
 			<a-mouseenter target="#sky4" visible="false"></a-mouseenter>
+		</a-curvedimage>
+
+		<!-- Menu Frame -->
+		<a-curvedimage src="images/frame.png" radius="2" theta-length="70" height="1.22" position="0 -1 0" rotation="0 35 0" opacity=".1">
+			<!-- Turn the buttons ON when you enter the frame -->
+			<a-mouseenter target="#button1" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button2" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button3" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button4" opacity="1"></a-mouseenter>
+			<a-mouseenter target="#button5" opacity="1"></a-mouseenter>
+			<!-- Turn the buttons OFF when you enter the frame -->
+			<a-mouseleave target="#button1" opacity="0"></a-mouseleave>
+			<a-mouseleave target="#button2" opacity="0"></a-mouseleave>
+			<a-mouseleave target="#button3" opacity="0"></a-mouseleave>
+			<a-mouseleave target="#button4" opacity="0"></a-mouseleave>
+			<a-mouseleave target="#button5" opacity="0"></a-mouseleave>
+		</a-curvedimage>
+		
+		<a-curvedimage src="images/picu-urriellu-title.png" radius="1.85" theta-length="50" height=".81" position="0 -.18 0" rotation="0 30 0" opacity="1">
 		</a-curvedimage>
 
 		<!-- Scapes -->
