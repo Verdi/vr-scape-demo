@@ -4,9 +4,26 @@
     <meta charset="utf-8">
     <title>VR Scape Demo</title>
     <meta name="description" content="VR Scape Demo">
+    <style>
+	.view-source {
+		position: absolute;
+		top: 20px;
+		right: 10px;
+		z-index: 999999;
+		background-color: rgba(102, 102, 102, 0.5);
+		color: #FFF;
+		margin-right: 10px;
+		padding: 9px;
+		font-family: Arial, sans-serif;
+  	}
+  	.view-source:fullscreen {
+  		display: none;
+  	}
+  </style>
     <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
   </head>
   <body>
+	  <a href="https://github.com/Verdi/vr-scape-demo/blob/gh-pages/index.html" class="view-source">View source</a>
 	  <a-scene>
 		<!-- Camera & Cursor -->
 		<a-camera wasd-controls-enabled="false" cursor-visible="true" cursor-color="#333" cursor-opacity=".5" position="0 0 0"></a-camera>
